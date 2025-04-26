@@ -2,20 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PIN Code Finder</title>
+  <title>AUM Express - PIN Finder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1a73e8;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header p {
+      margin-top: 5px;
+      font-size: 14px;
+      color: #cde3ff;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    h3 {
+      color: #1a73e8;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #155ac1;
+    }
+
+    p#placeResult, p#pinResult {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-  <h1>PIN Code ↔️ Place Finder</h1>
 
-  <h3>🔍 PIN Code diye Place khujun:</h3>
-  <input type="text" id="pinInput" placeholder="Enter PIN code">
-  <button onclick="findPlace()">Find Place</button>
-  <p id="placeResult"></p>
+  <header>
+    <h1>📦 AUM EXPRESS PVT LTD</h1>
+    <p>Made by Indra da</p>
+  </header>
 
-  <h3>📍 Place diye PIN Code khujun:</h3>
-  <input type="text" id="placeInput" placeholder="Enter place name">
-  <button onclick="findPin()">Find PIN</button>
-  <p id="pinResult"></p>
+  <div class="container">
+    <h3>🔍 PIN Code diye Place khujun:</h3>
+    <input type="text" id="pinInput" placeholder="Enter PIN code">
+    <button onclick="findPlace()">Find Place</button>
+    <p id="placeResult"></p>
+
+    <h3>📍 Place diye PIN Code khujun:</h3>
+    <input type="text" id="placeInput" placeholder="Enter place name">
+    <button onclick="findPin()">Find PIN</button>
+    <p id="pinResult"></p>
+  </div>
 
   <script src="script.js"></script>
 </body>
